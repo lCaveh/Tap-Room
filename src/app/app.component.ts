@@ -7,6 +7,18 @@ import {Beer} from "./models/beer.model"
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  beers: Beer[]
-  createNewBeer( name:string, brand:string, price: number, discountedPrice:number,  alcohol:number)
+  selectedBeer = null;
+  beers: Beer[]=[
+  new Beer('budweiser','bud light',5,3,3)
+  ];
+ 
+  editBeer(clickedBeer) {
+    this.selectedBeer = clickedBeer;
+  }
+  finishedEditing() {
+   this.selectedBeer = null;
+ }
+  addBeer(newBeer: Beer) {
+    this.beers.push(newBeer);
+  }
 }

@@ -1,0 +1,26 @@
+
+<h1>New Task</h1>
+<div>
+ <label>Enter Beer name:</label>
+ <input #newName>
+</div>
+<div>
+  <label>Enter Beer brand:</label>
+  <input #newBrand>
+ </div>
+ <div>
+  <label>Enter Beer price:</label>
+  <input #newPrice>
+ </div>
+ <div>
+  <label>Enter Beer discounted price:</label>
+  <input #newDiscountedPrice>
+ </div>
+ <div>
+  <label>Enter Beer alcohol%:</label>
+  <input #newAlcohol>
+ </div>
+
+<div>
+  <button (click)="submitForm(newName.value, newBrand.value, newPrice.value, newDiscountedPrice.value, newAlcohol.value); newName.value=''; newBrand.value=''; newAlcohol.value='';newPrice.value=''; newDiscountedPrice.value='';">Add</button>
+</div>
