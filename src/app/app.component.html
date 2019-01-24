@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src=".././assets/img/beers.png" alt="">
+    </div>
+    <div class="col-md-6">
+      <img  src=".././assets/img/beerMaker.png" alt="">
+    </div>
+  </div>
+  <div *ngIf="formDisplay" class="row">
+  <form  action="index.html" method="post">
+    <label for="name">Name</label>
+    <input type="text">
+    <label for="brand">Brand</label>
+    <input type="text">
+    <label for="price">Alcohol Price</label>
+    <input type="text">
+    <label for="Alcohol">Alcohol Content</label>
+    <input type="text">
+  </form>
+  </div>
+
+</div>
