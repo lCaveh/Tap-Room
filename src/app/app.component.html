@@ -10,20 +10,6 @@
   <app-employee [childBeerList]="beers" (clickSender)="editBeer($event)"></app-employee>
   <app-add-beer (sendBeer)="addBeer($event)"></app-add-beer>
   <app-edit-beer [childSelectedBeer]="selectedBeer" (clickedDone)="finishedEditing()"></app-edit-beer>
-  <!-- <app-sell-beer [childSelectedBeer]="selectedBeer" ></app-sell-beer> -->
-
-
-  <!-- <div *ngIf="formDisplay" class="row">
-  <form  action="index.html" method="post">
-    <label for="name">Name</label>
-    <input type="text">
-    <label for="brand">Brand</label>
-    <input type="text">
-    <label for="price">Alcohol Price</label>
-    <input type="text">
-    <label for="Alcohol">Alcohol Content</label>
-    <input type="text">
-  </form>
-  </div> -->
+  <app-sell-beer [childSelectedBeer]="selectedBeer" ></app-sell-beer>
 
 </div>

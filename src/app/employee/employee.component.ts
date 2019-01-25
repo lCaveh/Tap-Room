@@ -22,5 +22,7 @@ export class EmployeeComponent {
   editButtonClicked(beerToEdit: Beer){
     this.clickSender.emit(beerToEdit);
   }
-  
+  sellButtonClicked(beerToSell: Beer){
+    this.clickSender.emit(beerToSell);
+  }
 }

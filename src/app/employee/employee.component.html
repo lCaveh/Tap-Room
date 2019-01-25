@@ -1,9 +1,9 @@
 <ul>
-  <li [class]="priorityColor(currentBeer)" *ngFor="let currentBeer of childBeerList">name: {{currentBeer.name}} brand: {{currentBeer.brand}} Alc: {{currentBeer.alcohol}}%  Price: ${{currentBeer.price}}
+  <li [class]="priorityColor(currentBeer)" *ngFor="let currentBeer of childBeerList">name: {{currentBeer.name}} brand: {{currentBeer.brand}} Alc: {{currentBeer.alcohol}}%  Price: ${{currentBeer.price}} {{currentBeer.capacity}}
     <input *ngIf="currentBeer.done === true" type="checkbox" checked (click)="toggleDone(currentBeer, false)"/>
     <input *ngIf="currentBeer.done === false" type="checkbox" (click)="toggleDone(currentBeer, true)"/>
     <button (click)="editButtonClicked(currentBeer)">Edit!</button>
-    <button>Sell Beer!</button>
+    <button (click)="sellButtonClicked(currentBeer)">Sell Beer!</button>
   </li>
 </ul>
 <button >Add new Beer</button>

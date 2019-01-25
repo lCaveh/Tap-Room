@@ -5,7 +5,7 @@ export class Beer{
   constructor(public name:string,public brand:string,public price: number,public discountedPrice:number, public alcohol:number){
     this.currentPrice=this.price;
   }
-  sellBeer(type:string){
+  sellBeer(type){
     if (type=="Pint"){
       this.capacity--;
     } else if (type=="Growler"){

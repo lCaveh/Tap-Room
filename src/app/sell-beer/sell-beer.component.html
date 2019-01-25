@@ -1,3 +1,9 @@
-<p>
-  sell-beer works!
-</p>
+<div>
+  <h3 *ngIf="childSelectedBeer">{{childSelectedBeer.name}}</h3>
+  <select #amount>
+    <option value="Pint" selected="selected">Sell a Pint</option>
+    <option value="Growler">Sell a Growler</option>
+    <option value="Large">Sell a large Growler</option>
+  </select>
+  <button (click)="sellIt(childSelectedBeer, amount.value)">Done</button>
+</div>
